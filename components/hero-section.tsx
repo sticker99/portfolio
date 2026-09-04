@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
@@ -6,17 +7,29 @@ export function HeroSection() {
     <section className="min-h-[90vh] flex items-center pt-20">
       <div className="mx-auto max-w-4xl px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-[1fr,1.5fr] gap-12 md:gap-16 items-start">
-          {/* Left Column - Name & Title */}
+          {/* Left Column - Photo, Name & Title */}
           <div className="space-y-6">
+            {/* TODO: replace with a real headshot in /public and swap the src below */}
+            <div className="h-24 w-24 rounded-full bg-secondary border border-border/60 overflow-hidden">
+              <Image
+                src="/srikar-headshot.jpeg"
+                alt="Srikar Mahankali"
+                width={96}
+                height={96}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
+
             <div>
               <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground text-balance">
                 Srikar Mahankali
               </h1>
               <p className="mt-2 text-lg text-accent font-medium">
-                Full-Stack Developer
+                Software Engineer
               </p>
             </div>
-            
+
             <p className="text-muted-foreground leading-relaxed">
               I build thoughtful digital products that solve real problems for real people.
             </p>
@@ -26,53 +39,50 @@ export function HeroSection() {
               <NavLink href="#about" label="About" />
               <NavLink href="#experience" label="Experience" />
               <NavLink href="#projects" label="Projects" />
+              <NavLink href="#contact" label="Contact" />
             </nav>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 pt-6">
-              <SocialLink 
-                href="https://www.linkedin.com/in/mahankalisrikar" 
-                label="LinkedIn" 
+              <SocialLink
+                href="https://www.linkedin.com/in/mahankalisrikar"
+                label="LinkedIn"
               />
-              <SocialLink 
-                href="mailto:srikar.primary@gmail.com" 
-                label="Email" 
+              <SocialLink
+                href="mailto:srikar.primary@gmail.com"
+                label="Email"
               />
             </div>
           </div>
 
           {/* Right Column - About */}
-          <div className="space-y-6 text-foreground/90 leading-relaxed" id="about">
-            <p>
-              I&apos;m an engineer passionate about building software that makes a difference. 
-              My work lies at the intersection of product thinking and technical execution, 
-              creating experiences that not only function well but genuinely help users 
-              accomplish their goals.
+          <div className="space-y-6 leading-relaxed" id="about">
+            <p className="text-foreground/90">
+              I&apos;m an engineer who cares more about the problem than the stack.
+              I like sitting with users until I understand what they&apos;re actually
+              stuck on, then building the smallest thing that gets them unstuck —
+              whether that&apos;s a feature at work or a product I&apos;ve started
+              from nothing on a weekend.
             </p>
-            
-            <p>
-              Currently, I&apos;m a <span className="text-foreground font-medium">Software Engineer</span> at{" "}
+
+            <p className="text-foreground/90">
+              That instinct is why I keep building outside of my day job at{" "}
               <Link href="https://aon.com" className="text-foreground font-medium underline underline-offset-2 decoration-border hover:decoration-accent transition-colors">
                 Aon
               </Link>
-              , where I&apos;ve had the opportunity to design and develop their first AI panelist, 
-              showcased at an international Climate & Insurance Conference.
+              {" "}— see{" "}
+              <Link href="#experience" className="text-foreground font-medium underline underline-offset-2 decoration-border hover:decoration-accent transition-colors">
+                Experience
+              </Link>
+              {" "}and{" "}
+              <Link href="#projects" className="text-foreground font-medium underline underline-offset-2 decoration-border hover:decoration-accent transition-colors">
+                Projects
+              </Link>
+              {" "}below for what I&apos;ve shipped, at Aon and on my own.
             </p>
 
-            <p>
-              In my own time, I&apos;ve founded and built{" "}
-              <Link href="https://clubproalpha.com" className="text-foreground font-medium underline underline-offset-2 decoration-border hover:decoration-accent transition-colors">
-                ClubPro Alpha
-              </Link>
-              , a multi-tenant club management platform, and{" "}
-              <Link href="https://www.pickleballcrossroad.com" className="text-foreground font-medium underline underline-offset-2 decoration-border hover:decoration-accent transition-colors">
-                Crossroad Pickleball
-              </Link>
-              , a PWA that grew to 800+ sign-ups and 245 monthly active users with an 80% satisfaction rate.
-            </p>
-
-            <p>
-              I studied Information Systems at Singapore Management University, 
+            <p className="text-foreground/90">
+              I studied Information Systems at Singapore Management University,
               graduating Cum Laude. When I&apos;m not coding, you&apos;ll find me drinking coffee at a cafe in Bali.
             </p>
           </div>

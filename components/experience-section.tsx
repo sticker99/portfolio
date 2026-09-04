@@ -32,7 +32,7 @@ const experiences: ExperienceItem[] = [
     title: "Founder & Developer",
     company: "ClubPro Alpha",
     companyUrl: "https://clubproalpha.com",
-    description: "Built a multi-tenant club management platform unifying bookings, memberships, payments, and online store. Designed full stack with Next.js, TypeScript, tRPC, PostgreSQL, and Expo for mobile. First customer going live Apr 2026.",
+    description: "Built a multi-tenant club management platform unifying bookings, memberships, payments, and online store. Designed full stack with Next.js, TypeScript, tRPC, PostgreSQL, and Expo for mobile.",
     skills: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Stripe", "Expo", "Multi-tenancy"],
   },
   {

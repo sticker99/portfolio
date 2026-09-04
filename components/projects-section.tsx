@@ -12,22 +12,21 @@ interface Project {
 const projects: Project[] = [
   {
     title: "ClubPro Alpha",
-    description: "Multi-tenant club management platform unifying bookings, memberships, payments, and online store into a single system for sports clubs. Features admin dashboards, feature flags, and tenant-aware architecture.",
+    description: "Multi-tenant club management platform unifying bookings, memberships, payments, and an online store into a single system for sports clubs. Features admin dashboards, feature flags, and tenant-aware architecture.",
     url: "https://clubproalpha.com",
-    stats: "First customer going live Apr 2026",
     technologies: ["Next.js", "React", "TypeScript", "tRPC", "PostgreSQL", "Supabase", "Stripe", "Expo"],
   },
   {
     title: "Crossroad Pickleball",
-    description: "PWA that automates session bookings, waitlists, priority access, and credit purchases. Replaced manual WhatsApp coordination for a pickleball community, reducing organizer admin workload by ~50%.",
+    description: "PWA that automates session bookings, waitlists, priority access, and credit purchases. Replaced manual WhatsApp coordination for a pickleball community, reducing organizer admin workload by more than 50% and enabled scaling of operations.",
     url: "https://www.pickleballcrossroad.com",
     stats: "800 sign-ups · 245 MAUs · 80% satisfaction",
-    technologies: ["PWA", "React", "TypeScript", "Product Development"],
+    technologies: ["PWA", "Next.js", "TypeScript", "tRPC", "Product Development"],
   },
   {
     title: "Aon AI Panelist",
     description: "Designed and developed Aon's first AI panelist, showcased at an international Climate & Insurance Conference 2025. Answered 20+ audience questions live, positioning Aon as an AI innovation leader.",
-    technologies: ["AI/ML", "C#", "Angular", "TypeScript"],
+    technologies: ["AI/ML", "Next.js", "TypeScript"],
   },
   {
     title: "SolanaFM Explorer",

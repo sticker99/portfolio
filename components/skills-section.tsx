@@ -36,16 +36,16 @@ export function SkillsSection() {
               <h3 className="text-sm font-medium text-foreground mb-4">
                 {category.title}
               </h3>
-              <ul className="space-y-2">
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
-                  <li 
+                  <span
                     key={skill}
-                    className="text-sm text-muted-foreground"
+                    className="text-xs px-2.5 py-1 bg-secondary text-secondary-foreground rounded-full"
                   >
                     {skill}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

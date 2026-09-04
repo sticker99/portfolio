@@ -21,15 +21,10 @@ export function ContactSection() {
               label="srikar.primary@gmail.com"
               description="Email"
             />
-            <ContactLink 
-              href="https://www.linkedin.com/in/mahankalisrikar" 
+            <ContactLink
+              href="https://www.linkedin.com/in/mahankalisrikar"
               label="linkedin.com/in/mahankalisrikar"
               description="LinkedIn"
-            />
-            <ContactLink 
-              href="tel:+6596436150" 
-              label="+65 9643 6150"
-              description="Phone"
             />
           </div>
         </div>
