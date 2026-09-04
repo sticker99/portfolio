@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 })
 
-const siteUrl = 'https://www.srikarmahankali.com'
+const siteUrl = 'https://www.qwertybob.com'
 const title = 'Srikar Mahankali — Software Engineer'
 const description = 'Software Engineer building thoughtful digital products.'
 
